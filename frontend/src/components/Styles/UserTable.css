@@ -1,0 +1,105 @@
+/* General Table Styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1a1a1a; /* Dark background */
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(67, 97, 238, 0.5); /* Subtle blue glow */
+}
+
+/* Table Header */
+.user-table thead {
+    background: #4361ee; /* Blue header */
+}
+
+.user-table th {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Table Rows */
+.user-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.user-table tbody tr:hover {
+    background: rgba(67, 97, 238, 0.2); /* Light blue hover effect */
+}
+
+/* Table Cells */
+.user-table td {
+    padding: 12px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 15px 0;
+    background: #252525;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: #ffffff;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.search-bar:focus {
+    border-color: #4361ee;
+    outline: none;
+}
+
+/* No Data Message */
+.no-data {
+    text-align: center;
+    font-size: 16px;
+    color: #ff4444;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.view-btn, .see-more-btn {
+    padding: 8px 14px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* View Profile Button */
+.view-btn {
+    background: #4361ee;
+    color: white;
+}
+
+.view-btn:hover {
+    background: #3244c6;
+}
+
+/* See More Button */
+.see-more-btn {
+    background: #252525;
+    color: #ffffff;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.see-more-btn:hover {
+    background: #3244c6;
+}
