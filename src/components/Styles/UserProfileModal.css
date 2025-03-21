@@ -1,0 +1,156 @@
+/* Modal Background Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sleek Modal Card */
+.modal-card {
+    background: #1f2937; /* gray-900 */
+    width: 60%;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Modal Title */
+.modal-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #d1d5db; /* Light gray text */
+}
+
+/* Form Inputs */
+.user-info label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    color: #d1d5db; /* Light gray text */
+}
+
+.user-info input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #374151; /* gray-700 */
+    background: #111827; /* Darker gray */
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+
+.user-info input:disabled {
+    background: #374151;
+    color: #9ca3af; /* gray-400 */
+}
+
+/* Buttons Section */
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.save-btn, .edit-btn, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.edit-btn {
+    background: #2563eb; /* Blue-600 */
+    color: white;
+}
+
+.delete-btn {
+    background: #dc2626; /* Red-600 */
+    color: white;
+}
+
+/* Hover Effects */
+.save-btn:hover {
+    background: #22c55e;
+}
+
+.edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Two-Column Layout */
+.user-info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Row Styling */
+.user-info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Column Styling */
+.user-info-column {
+    flex: 1;
+}
+
+/* Adjust Input Styling */
+.user-info input {
+    width: 100%;
+}

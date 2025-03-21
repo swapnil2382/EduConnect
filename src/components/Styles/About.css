@@ -1,0 +1,130 @@
+/* Full Page Styling */
+.about-page {
+    background-color: #0d0d2b;
+    color: white;
+    font-family: "Arial", sans-serif;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+  }
+  
+  /* Mission & Vision Section */
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+  
+  .mission, .vision {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%;
+    transition: transform 0.3s ease;
+  }
+  
+  .mission:hover, .vision:hover {
+    transform: scale(1.05);
+  }
+  
+  .mission h2, .vision h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* AI Features Section */
+  .features-section {
+    margin: 50px 0;
+  }
+  
+  .features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .feature-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .feature-card span {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    margin-top: 50px;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .testimonial-box span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mission, .vision {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+  

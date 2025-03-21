@@ -1,0 +1,223 @@
+.navbar {
+  background-color: #1a1a2e;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0.75rem 0;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navbar-logo h1 {
+  color: #4361ee;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: #4361ee;
+  background-color: rgba(67, 97, 238, 0.1);
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* User Profile */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Avatar */
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #4361ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Avatar Hover Effect */
+.user-avatar:hover {
+  background-color: #3a56d4;
+  transform: scale(1.1);
+}
+
+/* User Details */
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #e6e6e6;
+  font-size: 0.9rem;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  text-transform: capitalize;
+}
+
+/* Dashboard Button */
+.dashboard-btn {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 0.75rem;
+}
+
+/* Dashboard Button Hover Effect */
+.dashboard-btn:hover {
+  background-color: #3a56d4;
+  transform: translateY(-2px);
+}
+
+/* Login Button */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #4361ee;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #3a56d4;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .navbar-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .navbar-menu {
+    gap: 0.75rem;
+  }
+
+  .navbar-link {
+    padding: 0.5rem;
+  }
+
+  .navbar-link span {
+    display: none;
+  }
+
+  .user-details {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo h1 {
+    font-size: 1.25rem;
+  }
+
+  .dashboard-btn {
+    display: none;
+  }
+}
+.logoutbtn {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logoutbtn:hover {
+  background-color: #e04e2a;
+}
+/* Add User Button - Same Style as Navbar Links */
+.add-user-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.add-user-btn:hover {
+  color: #4361ee;
+  background-color: rgba(67, 97, 238, 0.1);
+}
