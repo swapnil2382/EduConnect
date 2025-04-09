@@ -42,20 +42,18 @@ app.use("/api/admin", adminRoutes);
 
 app.use("/uploads", express.static("uploads"));
 
-// MongoDB Connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/pt-communication", {
-      dbName: "pt-communication",
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+    await mongoose.connect(process.env.MONGODB_URI, {
+      dbName: "pt-communication"
     });
-    console.log(`Connected to MongoDB: ${mongoose.connection.db.databaseName}`);
+    console.log(`✅ Connected to MongoDB: ${mongoose.connection.db.databaseName}`);
   } catch (err) {
     console.error("❌ MongoDB connection error:", err);
     process.exit(1);
   }
 };
+
 
 // Home Route
 app.get("/", (req, res) => {
