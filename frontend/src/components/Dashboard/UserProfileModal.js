@@ -15,7 +15,7 @@ const UserProfileModal = ({ selectedUser, isEditing, setIsEditing, setSelectedUs
                     <div className="user-info-grid">
                         <div className="user-info-row">
                             <div className="user-info-column">
-                                <label>Parent Name:</label>
+                                <label>Name:</label>
                                 <input 
                                     type="text" 
                                     name="name" 
